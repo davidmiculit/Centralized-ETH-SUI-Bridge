@@ -9,25 +9,25 @@ contract IBT is ERC20, Ownable {
 
     constructor() ERC20("Inter BlockChain Token", "IBT") Ownable(msg.sender) {}
 
-    // Mint tokens (only owner can mint)
+    // minting if owner
     function mint(address to, uint256 amount) external onlyOwner {
         _mint(to, amount);
     }
 
-    // Burn tokens (users can burn their own tokens)
+    // burning if owner
     function burn(uint256 amount) external {
         require(balanceOf(msg.sender) >= amount, "Insufficient balance");
         _burn(msg.sender, amount);
     }
 
-    // Initiate bridge (users can bridge their own tokens)
+    // initiate bridge
     function initiatebridge(uint256 amount, string calldata suiAddress) external {
         require(balanceOf(msg.sender) >= amount, "Insufficient balance");
 
-        // Burn the tokens from the user's account
+        // burn
         _burn(msg.sender, amount);
 
-        // Emit bridge event
+        // emit bridge
         emit BridgeInitiated(msg.sender, amount, "sui", suiAddress);
     }
 }

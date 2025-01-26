@@ -1,0 +1,145 @@
+.bridge-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .card-header {
+    background: linear-gradient(to right, #3b82f6, #9333ea);
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+  }
+  
+  .button-primary {
+    display: inline-block;
+    width: 100%;
+    padding: 0.75rem;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+    cursor: pointer;
+    background: linear-gradient(to right, #3b82f6, #9333ea);
+    color: white;
+  }
+  
+  .button-primary:hover {
+    background: linear-gradient(to right, #2563eb, #7c3aed);
+  }
+  
+  .wallet-list {
+    margin-top: 1rem;
+  }
+  
+  .wallet-list-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4b5563;
+  }
+  
+  .wallet-buttons {
+    display: grid;
+    gap: 0.5rem;
+  }
+  
+  .wallet-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .wallet-button:hover {
+    background-color: #f9fafb;
+  }
+  
+  .wallet-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+  }
+  
+  .wallet-name {
+    font-weight: 500;
+    color: #1f2937;
+  }
+  
+  .wallet-version {
+    font-size: 0.75rem;
+    color: #6b7280;
+  }
+  
+  .wallet-info {
+    padding: 1rem;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .wallet-detail {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    color: #4b5563;
+  }
+  
+  .wallet-address {
+    font-family: monospace;
+    color: #1f2937;
+  }
+  
+  .alert {
+    padding: 1rem;
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 0.5rem;
+    color: #166534;
+    margin-top: 1rem;
+  }
+  
+  .bridge-actions {
+    margin-top: 1rem;
+  }
+  
+  .bridge-actions select,
+  .bridge-actions input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .bridge-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
